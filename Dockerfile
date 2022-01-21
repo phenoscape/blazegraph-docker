@@ -23,9 +23,8 @@ ENV BLAZEGRAPH_READONLY="true"
 # the port on which owlery will be listening within the container
 EXPOSE 8080
 
-# By default, a writable working directory is expected at this location,
+# By default, a writable working directory is expected,
 # containing blazegraph.properties and blazegraph.jnl
-# (override on the docker run commandline by providing a trailing argument)
-CMD ["/data"]
+WORKDIR /data
 
 ENTRYPOINT ["/blazegraph/entrypoint.sh"]
