@@ -20,7 +20,7 @@ ENV BLAZEGRAPH_MEMORY="8G"
 ENV BLAZEGRAPH_TIMEOUT="60000"
 ENV BLAZEGRAPH_READONLY="true"
 
-# the port on which owlery will be listening within the container
+# the port on which Blazegraph will be listening within the container
 EXPOSE 8080
 
 # By default, a writable working directory is expected,
