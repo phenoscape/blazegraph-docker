@@ -1,10 +1,10 @@
-FROM openjdk:17-buster
+FROM openjdk:8-buster
 
 LABEL maintainer="balhoff@renci.org"
 
 RUN mkdir /blazegraph \
 && cd /blazegraph \
-&& curl -L -O 'https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.jar' \
+&& curl -L -O 'https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.jar' \
 && curl -L -O 'https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlets/9.2.3.v20140905/jetty-servlets-9.2.3.v20140905.jar'
 
 ADD readonly_cors.xml /blazegraph/readonly_cors.tmp.xml

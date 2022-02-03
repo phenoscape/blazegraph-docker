@@ -2,7 +2,7 @@
 #### Commands for building the Docker image ####
 ################################################
 
-VERSION="2.1.6.3"
+VERSION="2.1.5.0"
 IM=phenoscape/blazegraph
 
 docker-build-no-cache:
